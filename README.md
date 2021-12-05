@@ -19,6 +19,8 @@ Converts Google Takeout historical data for Google Maps from JSON to 2-column CS
     ``Semantic Location History\\all\\2020_AUGUST.json``
     
     ``Semantic Location History\\all\\2021_MAY.json``, etc
+    
+    This will *not* be necessary in the next update...
 4. Update the script to your file location
 5. Choose an output location for the csv file
 6. Run the script
