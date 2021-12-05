@@ -3,8 +3,8 @@ import json
 import csv
 import os
 
-for file in os.listdir('C:\\SOME FOLDER\\Takeout\\Takeout\\Location History\\Semantic Location History\\all'):
-    jsonFile = f"C:\\SOME FOLDER\\Takeout\\Takeout\\Location History\\Semantic Location History\\all\\{file}"
+for file in os.listdir('C:\\SOME FOLDER\\Takeout\\Location History\\Semantic Location History\\all'):
+    jsonFile = f"C:\\SOME FOLDER\\Takeout\\Location History\\Semantic Location History\\all\\{file}"
     with open(jsonFile, 'r') as f:
         data = json.load(f)
     features = []
