@@ -1,7 +1,7 @@
 # GMapsJSONtoCSV
 Converts Google Takeout historical data for Google Maps from JSON to 2-column CSV with long/latitude
 
-# Downloading your Takeout data
+## Downloading your Takeout data
 
 1. Visit takeout.google.com
 2. Scroll down or search for 'Location History'
@@ -9,7 +9,7 @@ Converts Google Takeout historical data for Google Maps from JSON to 2-column CS
 4. Click through the next few steps, receive the email from Google (or directly download depending on file size), download the data
 
 
-# Setup
+## Setup
 
 1. Extract the .zip (etc) file to any location
 2. Have the folder setup something like the following:
