@@ -18,3 +18,8 @@ Converts Google Takeout historical data for Google Maps from JSON to 2-column CS
 5. Choose an output location for the csv file by updating the {SOMEDIR} field
 6. Run the script
 7. Do something cool with the data or don't
+
+
+## Notes
+
+I haven't checked the outputWithDupes to see if the duped data is bad code or actual duplicated in the JSON files, but I am working on that for the next update. Pretty sure the issue lies in the "with open.... as testFile" line
