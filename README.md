@@ -22,4 +22,12 @@ Converts Google Takeout historical data for Google Maps from JSON to 2-column CS
 
 ## Notes
 
-I haven't checked the outputWithDupes to see if the duped data is bad code or actual duplicated in the JSON files, but I am working on that for the next update. Pretty sure the issue lies in the "with open.... as testFile" line
+* outputWithDupes will likely contain multiple of the same coordinate pairs. I did some looking into my own data and found that almost all the duplicate coordinates were either my place of work, my home, or friend's home. If you're making some sort of heatmap, this is probably the file you want to use.
+
+* finalNoDupes removes any duplicate coordinate pairs. If you want to make a map of every county/state you've visited, this is probably the file you want to use.
+
+
+## Next version
+
+* I will likely make this script into an actual function instead of loose code
+* I want to add integration with QGIS as well. The ideas I listed under Notes would be a cool thing to add to this script
