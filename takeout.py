@@ -22,14 +22,13 @@ for folder in os.listdir(maindir):
                 except:
                     print('--')
         fields = ['latitude','longitude']
-    #line below is probably why/how I get dupes. Need to figure out better placement so it doesn't run every single loop.
-    with open('{SOMEDIR}\MapProject\\outputWithDupes.csv', 'a', newline='') as testFile:
-        writer = csv.DictWriter(testFile, fieldnames=fields)
-        writer.writeheader()
-        for loc in features:
-            writer.writerow(loc)
+with open('{SOMEDIR}\\outputWithDupes.csv', 'a', newline='') as testFile:
+    writer = csv.DictWriter(testFile, fieldnames=fields)
+    writer.writeheader()
+    for loc in features:
+        writer.writerow(loc)
 testFile.close()
-with open('{SOMEDIR}\\MapProject\\outputWithDupes.csv', 'r') as in_file, open('{SOMEDIR}\\MapProject\\finalNoDupes.csv','w') as out_file:
+with open('{SOMEDIR}\\outputWithDupes.csv', 'r') as in_file, open('{SOMEDIR}\\finalNoDupes.csv','w') as out_file:
     seen = set()
     for line in in_file:
         if line in seen: continue
