@@ -16,8 +16,9 @@ Converts Google Takeout historical data for Google Maps from JSON to 2-column CS
 ``C:\Users\yourname\\Documents\\Takeout\\Location History\\Semantic Location History\\2021`` etc
 4. Update {SOMEDIR} within the code to your file location. This may be in your Documents as suggested, or anywhere else you may want to do this.
 5. Choose an output location for the csv file by updating the {SOMEDIR} field
-6. Run the script
-7. Do something cool with the data or don't
+6. Make sure your python environment has the right packages installed. I really hope you know how to do that if you're reading this.
+7. Run the takeout.py script (or the fancy new takeout_gui.py!!)
+8. Do something cool with the data or don't
 
 
 ## Notes
