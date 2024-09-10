@@ -22,12 +22,13 @@ Converts Google Takeout historical data for Google Maps from JSON to 2-column CS
 
 ## Notes
 
-* outputWithDupes will likely contain multiple of the same coordinate pairs. I did some looking into my own data and found that almost all the duplicate coordinates were either my place of work, my home, or friend's home. If you're making some sort of heatmap, this is probably the file you want to use.
+* latlongdata.csv will almost definitely contain multiple of the same coordinate pairs. I did some looking into my own data and found that almost all the duplicate coordinates were either my place of work, my home, or friend's home. If you're making some sort of heatmap, this is probably the file you want to use.
 
-* finalNoDupes removes any duplicate coordinate pairs. If you want to make a map of every county/state you've visited, this is probably the file you want to use.
+* latlongdata_no_duplicates removes any duplicate coordinate pairs. If you want to make a map of every county/state you've visited, this is probably the file you want to use.
 
 
 ## Next version
 
-* I will likely make this script into an actual function instead of loose code
-* I want to add integration with QGIS as well. The ideas I listed under Notes would be a cool thing to add to this script
+* I will die if I have to make another version of this
+* Add integration with my CSVMappy Project. Maybe make it run in one script, idk
+* GUI maybe??
